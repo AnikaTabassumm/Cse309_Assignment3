@@ -31,7 +31,7 @@ body{
 
 .col-md-5{
     padding: 20px;
-    background: linear-gradient(to bottom right, rgba(53, 53, 53, 0.705), rgba(0, 0, 0, 0.941)) ;
+    /* background: linear-gradient(to bottom right, rgba(53, 53, 53, 0.705), rgba(0, 0, 0, 0.941)) ; */
     background-size: cover;
     color: white;
 }

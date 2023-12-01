@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css"/>
     <title>Contact us</title>
 </head>
@@ -13,47 +13,47 @@
         <div class="container" >
             <div class="row">
                 <div class="col-md-7">
-                  <form>
+                  <form action="contact_form.php" method="post">
                     <h4 class="mb-4 text-center">Send us a message</h4>
 
                     <div class="mb-3">
                       <label class="form-label">Enter your name*</label>
                       <div class="col">
-                        <input type="text" class="form-control shadow-sm" placeholder="First name" aria-label="First name" name="fname">
+                        <input required type="text" class="form-control shadow-sm" placeholder="First name" aria-label="First name" name="firstname">
                       </div>
                       <div class="col">
-                        <input type="text" class="form-control shadow-sm" placeholder="Last name" aria-label="Last name" name="lname">
+                        <input required type="text" class="form-control shadow-sm" placeholder="Last name" aria-label="Last name" name="lastname">
                       </div>
                     </div>
                     <div class="mb-3">
                       <label for="email" class="form-label">Email address*</label>
-                      <input type="email" class="form-control shadow-sm" id="email" placeholder="example@email.com">
+                      <input required type="email" class="form-control shadow-sm" name="email" placeholder="example@email.com">
                     </div>
                     <div class="mb-3">
                       <label for="phoneNumber" class="form-label">Enter your phone number*</label>
-                      <input type="email" class="form-control shadow-sm" id="phoneNumber" placeholder="Phone number">
+                      <input required type="text" class="form-control shadow-sm" name="phoneNumber" placeholder="Phone number">
                     </div>
                     <div class="mb-3">
                       <label for="message" class="form-label">Message*</label>
-                      <textarea class="form-control shadow-sm" id="message" rows="2" placeholder="Write us a message"></textarea>
+                      <textarea required type="text" class="form-control shadow-sm" name="message" rows="2" placeholder="Write us a message"></textarea>
                     </div>
                     <div class="mb-3">
-                      <input class="px-4 btn btn-dark text-center" type="submit" value="Send">
+                      <input class="px-4 btn btn-dark text-center" type="submit" value="Send" name="send">
                     </div>
                   </form>
                 </div>
-                <div class="col-md-5 ">
+                <div class="col-md-5" style="background-image: url('Image/staircase-6528080_1280.jpg');" >
                   <div class="contact px-4 py-5 my-5">
                     <h4 class="mb-4 text-center">Contact us</h4>
-                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Address</p>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot fa-sm" style="color: #ffffff;"></i>  Address</p>
                     
                     <p class="lead">Plot 16 Aftab Uddin Ahmed Rd, Dhaka 1229</p>
                 
-                    <p class="fs-6"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Lets talk</p>
+                    <p class="fs-6"><i class="fa-solid fa-phone fa-sm" style="color: #ffffff;"></i> Lets talk</p>
                     
                     <p class="lead">01xxxxxxxxx</p>
                     
-                    <p class="fs-6"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> Email</p>
+                    <p class="fs-6"><i class="fa-regular fa-envelope fa-sm" style="color: #ffffff;"></i> Email</p>
                     
                     <p class="lead">123@gmail.com</p>
                   </div>
@@ -63,6 +63,5 @@
     
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
